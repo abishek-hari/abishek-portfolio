@@ -1,0 +1,38 @@
+.collab__container {
+  padding-top: 1.5rem;
+}
+.collab__title {
+  font-size: var(--size-2xl);
+}
+.collab__desc {
+  max-width: 55ch;
+  margin: 1rem 0;
+  font-size: var(--size-xsm);
+  color: var(--clr-base);
+  line-height: 2;
+  letter-spacing: 1px;
+}
+.collab__mail {
+  font-size: var(--size-xsm);
+  font-weight: 700;
+  color: black;
+  position: relative;
+}
+/* sm */
+@media (min-width: 640px) {
+  .collab__title {
+    font-size: var(--size-3xl);
+  }
+  .collab__desc {
+    font-size: var(--size-sm);
+  }
+  .collab__mail {
+    font-size: var(--size-sm);
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .collab__desc {
+    font-size: var(--size-sml);
+  }
+}

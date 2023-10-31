@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  /* --clr-primary: #fafafa; */
+  --clr-primary: #f8f8fc;
+  --clr-medium: #333333;
+  --clr-base: #757575;
+  --clr-span-logo: #617bff;
+  --clr-span: #869aff;
+  --clr-span-bg: #98aaff;
+  --clr-span-text: #0f27a1;
+
+  /* --clr-purple: rgb(160, 165, 254);
+  --clr-span-dark: #209cee;
+  --clr-span-2: #42a7eb;
+  --clr-span: rgb(160, 165, 254);
+  --clr-span-1: rgb(188, 191, 255);
+  --clr-light: rgb(218, 219, 255);
+  --clr-navy: rgb(0, 0, 128); */
+
+  /* Sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-xsm: 0.8rem;
+  --size-sm: 0.875rem;
+  --size-sml: 0.9rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-4lg: 2.5rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+
+  /* Font Weight */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* letter spacing */
+  --letter-space: 1px;
+  --letter-space-sm: 0.5px;
+
+  /* line height */
+  --wider-sm: 1.75;
+  --wider-lg: 2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--clr-primary);
+  color: var(--clr-medium);
+}
+img,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+}

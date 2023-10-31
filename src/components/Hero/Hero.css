@@ -1,0 +1,119 @@
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  place-items: center;
+  height: 100%;
+  margin-top: 1.5rem;
+}
+.hero__main-img {
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.hero__icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem 0.3rem;
+}
+.hero__bar {
+  font-size: var(--size-2xl);
+  width: 110px;
+  height: 2px;
+  background-color: var(--clr-span);
+}
+.hero__icon {
+  display: flex;
+  gap: 0.5rem;
+  font-size: var(--size-xl);
+  cursor: pointer;
+  color: var(--clr-span);
+}
+.hero__info {
+  padding: 1.5rem 0.3rem;
+}
+.hero__name {
+  font-size: var(--size-2xl);
+  line-height: 1.2;
+}
+.hero__designation {
+  font-size: var(--size-2xl);
+}
+.hero__desc {
+  max-width: 45ch;
+  font-size: var(--size-xsm);
+  color: var(--clr-medium);
+  line-height: 2;
+}
+
+/* xs */
+@media (min-width: 475px) {
+}
+/* sm */
+@media (min-width: 640px) {
+  .hero__main-img {
+    width: 14rem;
+    height: 14rem;
+  }
+  .hero__name {
+    font-size: var(--size-2xl);
+  }
+  .hero__designation {
+    font-size: var(--size-2xl);
+  }
+  .hero__desc {
+    font-size: var(--size-sm);
+  }
+  .hero__container {
+    grid-template-columns: 7fr 5fr;
+    height: 65vh;
+  }
+  .hero__bar {
+    width: 150px;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .hero__icons {
+    padding: 0.5rem 1.5rem;
+  }
+  .hero__info {
+    padding: 2rem 1.5rem;
+  }
+  .hero__main-img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .hero__name {
+    font-size: var(--size-3xl);
+  }
+  .hero__designation {
+    font-size: var(--size-3xl);
+  }
+  .hero__desc {
+    font-size: var(--size-sm);
+    line-height: 1.75;
+  }
+  .hero__container {
+    height: 70vh;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  .hero__name {
+    font-size: var(--size-4lg);
+  }
+  .hero__designation {
+    font-size: var(--size-4lg);
+  }
+  .hero__desc {
+    font-size: var(--size-base);
+    line-height: 1.75;
+  }
+  .hero__container {
+    height: 80vh;
+    margin-top: 0.5rem;
+  }
+}

@@ -1,0 +1,194 @@
+.project-section {
+  padding: 2rem 0;
+}
+.project__title {
+  font-size: var(--size-2xl);
+  text-transform: capitalize;
+  letter-spacing: var(--letter-space);
+  color: var(--clr-medium);
+  text-transform: uppercase;
+}
+.project__description {
+  max-width: 70ch;
+  font-size: var(--size-xsm);
+  color: var(--clr-base);
+  letter-spacing: var(--letter-space-sm);
+  padding: 1rem 0;
+  line-height: var(--wider-sm);
+}
+.project__preview {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0.3rem;
+}
+.project__stack-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background-color: var(--clr-span);
+  color: var(--clr-primary);
+}
+.project__icon {
+  font-size: var(--size-sm);
+}
+.project__icon-name {
+  font-size: var(--size-xsm);
+  color: var(--clr-primary);
+}
+.tech__stack {
+  font-size: var(--size-lg);
+  text-transform: capitalize;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+.stack-name {
+  color: var(--clr-base);
+  font-size: var(--size-xsm);
+  letter-spacing: var(--letter-space-sm);
+  text-transform: capitalize;
+  padding: 0 0.2rem;
+}
+.project__img-box {
+  display: grid;
+  place-items: center;
+}
+.project__main-img {
+  width: 100%;
+  min-height: 14rem;
+  object-fit: fill;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.project__purpose-title,
+.project__webstack-title,
+.project__lesson-title,
+.other__projects-title {
+  font-size: var(--size-2xl);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.project__purpose-desc,
+.project__webstack-desc,
+.project__lesson-desc {
+  max-width: 70ch;
+  font-size: var(--size-xsm);
+  color: var(--clr-base);
+  line-height: var(--wider-lg);
+  letter-spacing: var(--letter-space-sm);
+}
+.project__webstack-section {
+  margin: 0;
+}
+.project__webstack-title {
+  color: var(--clr-medium);
+}
+.project__webstack-desc {
+  color: var(--clr-base);
+  white-space: pre-wrap;
+  overflow: auto;
+  text-align: justify;
+}
+.webstack__icons {
+  display: none;
+}
+.web__icons {
+  font-size: var(--size-3xl);
+  color: var(--clr-span);
+}
+@media (min-width: 640px) {
+  .project__purpose-title,
+  .project__webstack-title,
+  .project__lesson-title,
+  .other__projects-title {
+    font-size: var(--size-2xl);
+  }
+  .project__purpose-desc,
+  .project__webstack-desc,
+  .project__lesson-desc {
+    font-size: var(--size-sm);
+  }
+  .web__icons {
+    font-size: var(--size-4xl);
+  }
+  .project__img-box {
+    padding: 1.5rem 2rem;
+  }
+  .project__main-img {
+    height: 25rem;
+  }
+  .tech__stack {
+    font-size: var(--size-xl);
+  }
+  .stack-name {
+    font-size: var(--size-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  .project__purpose-title,
+  .project__webstack-title,
+  .project__lesson-title,
+  .other__projects-title {
+    font-size: var(--size-3xl);
+  }
+  .project__purpose-desc,
+  .project__webstack-desc,
+  .project__lesson-desc {
+    font-size: var(--size-sml);
+    line-height: var(--wider-sm);
+  }
+  .project__img-box {
+    padding: 2rem 3rem;
+  }
+  .project__main-img {
+    height: 29.5rem;
+  }
+  .project__title {
+    font-size: var(--size-3xl);
+  }
+  .project__description {
+    font-size: var(--size-sm);
+    line-height: var(--wider-sm);
+  }
+  .project__stack-btn {
+    padding: 0.5rem 1.5rem;
+  }
+  .project__img-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .webstack__icons {
+    display: flex;
+    place-items: center;
+    gap: 1.5rem;
+  }
+  .web__icons {
+    font-size: var(--size-7xl);
+    background-color: var(--clr-primary);
+    color: var(--clr-span);
+    border-radius: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+  }
+  .project__webstack-section {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    place-items: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: var(--clr-span-bg);
+  }
+  .project__webstack-title {
+    text-align: center;
+    color: var(--clr-span-logo);
+  }
+  .project__webstack-desc {
+    color: var(--clr-span-text);
+  }
+  .stack-name {
+    font-size: var(--size-base);
+  }
+}
