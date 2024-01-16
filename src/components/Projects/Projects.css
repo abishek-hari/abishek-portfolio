@@ -1,5 +1,5 @@
 .project-section {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .project__title {
   font-size: var(--size-2xl);
@@ -28,8 +28,9 @@
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
-  background-color: var(--clr-span);
+  background-color: #1b363f;
   color: var(--clr-primary);
+  letter-spacing: 1px;
 }
 .project__icon {
   font-size: var(--size-sm);
@@ -37,6 +38,8 @@
 .project__icon-name {
   font-size: var(--size-xsm);
   color: var(--clr-primary);
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .tech__stack {
   font-size: var(--size-lg);
@@ -48,16 +51,17 @@
   color: var(--clr-base);
   font-size: var(--size-xsm);
   letter-spacing: var(--letter-space-sm);
-  text-transform: capitalize;
-  padding: 0 0.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0.2rem 0;
 }
 .project__img-box {
   display: grid;
   place-items: center;
+  min-height: 14rem;
 }
 .project__main-img {
   width: 100%;
-  min-height: 14rem;
+  height: 100%;
   object-fit: fill;
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
 }
@@ -116,13 +120,19 @@
     padding: 1.5rem 2rem;
   }
   .project__main-img {
-    height: 25rem;
+    height: 18rem;
   }
   .tech__stack {
     font-size: var(--size-xl);
   }
   .stack-name {
     font-size: var(--size-sm);
+  }
+  .project__icon {
+    font-size: var(--size-sml);
+  }
+  .project__icon-name {
+    font-size: var(--size-sml);
   }
 }
 
@@ -143,7 +153,7 @@
     padding: 2rem 3rem;
   }
   .project__main-img {
-    height: 29.5rem;
+    height: 25rem;
   }
   .project__title {
     font-size: var(--size-3xl);
@@ -183,12 +193,12 @@
   }
   .project__webstack-title {
     text-align: center;
-    color: var(--clr-span-logo);
+    color: var(--clr-primary);
   }
   .project__webstack-desc {
-    color: var(--clr-span-text);
+    color: var(--clr-primary);
   }
-  .stack-name {
+  .project__icon {
     font-size: var(--size-base);
   }
 }

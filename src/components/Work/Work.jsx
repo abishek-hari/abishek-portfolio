@@ -5,6 +5,10 @@ import { projects } from "../../data";
 import { FaAngleDoubleRight } from "react-icons/fa";
 
 const Work = () => {
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <div className='container section work__container'>
       <h2 className='work__title'>
@@ -20,12 +24,18 @@ const Work = () => {
           const { id, img, title, desc } = project;
           return (
             <div className='work__card' key={id}>
-              <img src={img} alt={title} className='work__img' />
+              <div className='work-img-container'>
+                <img src={img} alt={title} className='work__img' />
+              </div>
               <div className='work__info'>
                 <h2 className='work__info-title'>{title}</h2>
                 <p className='work__info-desc'>{desc}</p>
-                <Link to={`/project/${id}`} className='work__btn'>
-                  view project <FaAngleDoubleRight className='fa__arrow' />
+                <Link
+                  to={`/project/${id}`}
+                  className='work__btn'
+                  onClick={scrollToTop}
+                >
+                  view Details <FaAngleDoubleRight className='fa__arrow' />
                 </Link>
               </div>
             </div>

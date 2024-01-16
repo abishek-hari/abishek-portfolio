@@ -48,7 +48,6 @@ const Skills = () => {
             <AiOutlineHtml5 className='skill-icon' />
             <li className='skills'>Html</li>
           </div>
-
           <div className='skills__name'>
             <FaCss3 className='skill-icon' />
             <li className='skills'>css</li>

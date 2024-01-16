@@ -6,14 +6,23 @@ const Header = () => {
   return (
     <header className='header'>
       <div className='container header__nav'>
-        <Link to='/' className='header__logo'>
-          A
-        </Link>
+        <div className='logo__container'>
+          <Link to='/' className='header__logo'>
+            A
+          </Link>
+          <Link to='/' className='header__logo-1'>
+            B
+          </Link>
+          <Link to='/' className='header__logo-2'>
+            I
+          </Link>
+        </div>
         <a
-          href='https://www.linkedin.com/in/abishekhari09/'
+          href='https://drive.google.com/file/d/1G3WWa56D5fsZIn5K79g6AKMmEMZ-Q9N2/view?usp=drive_link'
+          target='_blank'
           className='header__link'
         >
-          Collab
+          RESUME
         </a>
       </div>
     </header>

@@ -7,35 +7,49 @@
   margin-top: 1.5rem;
 }
 .hero__main-img {
-  width: 13rem;
-  height: 13rem;
+  width: 18rem;
+  height: 16rem;
   object-fit: cover;
-  border-radius: 50%;
 }
 .hero__icons {
   display: flex;
   gap: 1rem;
   align-items: center;
-  padding: 1.5rem 0.3rem;
+  padding: 0 0 0 0.8rem;
 }
 .hero__bar {
   font-size: var(--size-2xl);
-  width: 110px;
+  width: 50px;
   height: 2px;
   background-color: var(--clr-span);
 }
 .hero__icon {
   display: flex;
   gap: 0.5rem;
-  font-size: var(--size-xl);
   cursor: pointer;
-  color: var(--clr-span);
+}
+.hero-icon-sm {
+  font-size: 1rem;
+}
+.icon-link {
+  color: var(--clr-primary);
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+.icon-link:nth-child(1) {
+  background-color: var(--clr-blue);
+}
+.icon-link:nth-child(2) {
+  background-color: var(--clr-green);
+}
+.icon-link:nth-child(3) {
+  background-color: var(--clr-salamon);
 }
 .hero__info {
   padding: 1.5rem 0.3rem;
 }
 .hero__name {
-  font-size: var(--size-2xl);
+  font-size: var(--size-2lg);
   line-height: 1.2;
 }
 .hero__designation {
@@ -46,16 +60,17 @@
   font-size: var(--size-xsm);
   color: var(--clr-medium);
   line-height: 2;
+  margin-top: 0.6rem;
 }
 
-/* xs */
-@media (min-width: 475px) {
-}
 /* sm */
 @media (min-width: 640px) {
   .hero__main-img {
     width: 14rem;
     height: 14rem;
+  }
+  .hero-icon-sm {
+    font-size: 1.2rem;
   }
   .hero__name {
     font-size: var(--size-2xl);
@@ -71,20 +86,25 @@
     height: 65vh;
   }
   .hero__bar {
+    display: block;
+    font-size: var(--size-2xl);
     width: 150px;
+    height: 2px;
   }
 }
+
 /* md */
 @media (min-width: 768px) {
-  .hero__icons {
-    padding: 0.5rem 1.5rem;
-  }
   .hero__info {
-    padding: 2rem 1.5rem;
+    padding: 1rem;
+  }
+  .hero-icon-sm {
+    font-size: 1.5rem;
   }
   .hero__main-img {
-    width: 15rem;
-    height: 15rem;
+    width: 18.5rem;
+    height: 18.5rem;
+    border-radius: 1rem;
   }
   .hero__name {
     font-size: var(--size-3xl);
@@ -100,10 +120,11 @@
     height: 70vh;
   }
 }
+
 /* lg */
 @media (min-width: 1024px) {
   .hero__name {
-    font-size: var(--size-4lg);
+    font-size: var(--size-5xl);
   }
   .hero__designation {
     font-size: var(--size-4lg);
@@ -115,5 +136,13 @@
   .hero__container {
     height: 80vh;
     margin-top: 0.5rem;
+  }
+  .hero__icon {
+    font-size: var(--size-3xl);
+  }
+  .hero__main-img {
+    width: 21rem;
+    height: 24.5rem;
+    border-radius: 1rem;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Projects.css";
 import { projects, singleProject } from "../../data";
 import { useParams, Link } from "react-router-dom";
@@ -13,9 +13,9 @@ const Projects = () => {
     (project) => project.id !== Number(id)
   );
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   if (!project) {
     return <div>Project not found</div>;
@@ -67,9 +67,15 @@ const Projects = () => {
           </div>
           <h3 className='tech__stack'>
             Tech Stack :
-            {techstack.map((tech) => {
-              return <b className='stack-name'>{tech}</b>;
-            })}
+            <p className='stack-name-con'>
+              {techstack.map((stack, index) => {
+                return (
+                  <span key={index} className='stack-name'>
+                    {stack}
+                  </span>
+                );
+              })}
+            </p>
           </h3>
         </div>
       </div>
@@ -82,8 +88,8 @@ const Projects = () => {
       </div>
       <div className='project__webstack-section project-section'>
         <div className='webstack__icons'>
-          {icons.map((icon) => {
-            return <div>{icon}</div>;
+          {icons.map((icon, index) => {
+            return <div key={index}>{icon}</div>;
           })}
         </div>
         <div className='webstack__info'>
@@ -104,11 +110,17 @@ const Projects = () => {
             const { id, img, title, desc } = project;
             return (
               <div className='work__card' key={id}>
-                <img src={img} alt={title} className='work__img' />
+                <div className='work-img-container'>
+                  <img src={img} alt={title} className='work__img' />
+                </div>
                 <div className='work__info'>
                   <h2 className='work__info-title'>{title}</h2>
                   <p className='work__info-desc'>{desc}</p>
-                  <Link to={`/project/${id}`} className='work__btn'>
+                  <Link
+                    to={`/project/${id}`}
+                    className='work__btn'
+                    onClick={scrollToTop}
+                  >
                     view project <FaAngleDoubleRight className='fa__arrow' />
                   </Link>
                 </div>
