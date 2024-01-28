@@ -12,7 +12,7 @@ const Collabration = () => {
         </h2>
         <p className='collab__desc'>
           Feel free to reach out if you're looking for a developer,have a
-          question,or just want to connect
+          question,or just want to connect.
         </p>
         <div className='collab-links'>
           <div className='collab-link'>

@@ -95,3 +95,8 @@
     min-height: 13.5rem;
   }
 }
+@media (min-width: 1024px) {
+  .work-img-container {
+    min-height: 18rem;
+  }
+}

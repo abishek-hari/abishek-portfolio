@@ -11,7 +11,7 @@ export const projects = [
     id: 1,
     img: NexodusImg,
     title: "Nexodus",
-    desc: "Nexodus is an ecommerce website I developed, focusing on the furniture market and  designed it to be super user-friendly with a clean and easy-to-navigate layout",
+    desc: "Nexodus is an ecommerce website I developed, focusing on the furniture market and  designed it to be super user-friendly with a clean and easy-to-navigate layout.",
   },
 
   {
@@ -42,7 +42,7 @@ export const singleProject = [
     techstack: ["React", "Styled Component", "Auth0"],
     title: "Nexodus",
     description:
-      "Nexodus is an ecommerce website I developed, focusing on the furniture market.It's like an online furniture store where you can shop for sofas, beds, and other home furnishings.I designed it to be super user-friendly with a clean and easy-to-navigate layout",
+      "Nexodus is an ecommerce website I developed, focusing on the furniture market.It's like an online furniture store where you can shop for sofas, beds, and other home furnishings.I designed it to be super user-friendly with a clean and easy-to-navigate layout.",
     project__goal_title: "Project Purpose And Goal",
     project__goal_desc:
       "The primary goal of Nexodus was to design and build a responsive e-commerce website that provides a seamless shopping experience.I aimed to create an intuitive platform where users could explore a wide variety of furniture options. The project's purpose was to develop a real-world application that applies front-end technologies to solve user-centric challenges.",

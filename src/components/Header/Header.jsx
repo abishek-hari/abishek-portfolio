@@ -18,7 +18,7 @@ const Header = () => {
           </Link>
         </div>
         <a
-          href='https://drive.google.com/file/d/1aCs6pFQ4hgi2CPpKoorSTD92zo0j88sh/view?usp=drive_link'
+          href='https://drive.google.com/file/d/1aCs6pFQ4hgi2CPpKoorSTD92zo0j88sh/view'
           target='_blank'
           className='header__link'
         >
