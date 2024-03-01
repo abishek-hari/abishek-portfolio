@@ -61,7 +61,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--clr-primary);
+  background: linear-gradient(to right, #fffaee, #fff1f2);
   color: var(--clr-medium);
 }
 body::-webkit-scrollbar {
