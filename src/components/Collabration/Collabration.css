@@ -1,5 +1,6 @@
 .collab__container {
   padding-top: 1.5rem;
+  background: linear-gradient(to right, #fffaee, #fff1f2);
 }
 .collab__title {
   font-size: var(--size-2xl);

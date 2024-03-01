@@ -4,6 +4,7 @@ import { projects, singleProject } from "../../data";
 import { useParams, Link } from "react-router-dom";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
+import { FaGlobe } from "react-icons/fa";
 
 const Projects = () => {
   const { id } = useParams();
@@ -38,7 +39,7 @@ const Projects = () => {
   } = project;
 
   return (
-    <div className='container section'>
+    <div className='container section projects__container'>
       <div className='project__summary project-section'>
         <h2 className='project__title'>{title}</h2>
         <p className='project__description'>{description}</p>
@@ -55,7 +56,7 @@ const Projects = () => {
               </a>
             </button>
             <button className='project__stack-btn'>
-              <AiFillGithub className='project__icon' />
+              <FaGlobe className='project__icon' />
               <a
                 href={websiteLink}
                 target='_blank'
@@ -82,27 +83,38 @@ const Projects = () => {
       <div className='project__img-box project-section'>
         <img src={img} alt={title} className='project__main-img' />
       </div>
-      <div className='project__purpose-section project-section'>
-        <h2 className='project__purpose-title'>{project__goal_title}</h2>
-        <p className='project__purpose-desc'>{project__goal_desc}</p>
-      </div>
-      <div className='project__webstack-section project-section'>
-        <div className='webstack__icons'>
-          {icons.map((icon, index) => {
-            return <div key={index}>{icon}</div>;
-          })}
+      <div className='bento-grid project-section'>
+        <div className='grid1 bento__padding'>
+          <h2 className='project__purpose-title'>{project__goal_title}</h2>
+          <p className='project__purpose-desc'>{project__goal_desc}</p>
         </div>
-        <div className='webstack__info'>
+        <div className='grid2 bento__padding '>
+          <h2 className='bento__teck-stack'>Tech Stack</h2>
+          <div className='webstack__icons'>
+            {icons.map((icon, index) => {
+              return (
+                <img
+                  src={icon}
+                  alt='icons'
+                  key={index}
+                  className='bento-stack-img'
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className='grid3 bento__padding'>
           <h2 className='project__webstack-title'>
             {project__webstack__title}
           </h2>
           <p className='project__webstack-desc'>{project__webstack__desc}</p>
         </div>
+        <div className='grid4 bento__padding'>
+          <h2 className='project__lesson-title'>{project__lesson_title}</h2>
+          <p className='project__lesson-desc'>{project__lesson_desc}</p>
+        </div>
       </div>
-      <div className='project__lessons-section project-section'>
-        <h2 className='project__lesson-title'>{project__lesson_title}</h2>
-        <p className='project__lesson-desc'>{project__lesson_desc}</p>
-      </div>
+
       <div className='other__projects-section project-section'>
         <h2 className='other__projects-title'>Other projects</h2>
         <div className='work__box'>

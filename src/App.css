@@ -8,11 +8,11 @@
   --clr-span: #ffa07a;
   --clr-span-bg: #ffb293;
   --clr-green: #90ee90;
-  --clr-blue: #add8e6;
+  --clr-blue: #87cefa;
   --clr-salamon: #ffa07a;
   --clr-whitesmoke: #f5f5f5;
   --clr-black: #000000;
-
+  --clr-pink: #ffb6c1;
   /* Sizes */
   --size-xxs: 0.5rem;
   --size-xs: 0.75rem;
@@ -46,6 +46,9 @@
   /* line height */
   --wider-sm: 1.75;
   --wider-lg: 2;
+
+  /* shadow */
+  --shadow-1: 0px 5px 5px 1px #ffa07a;
 }
 
 * {

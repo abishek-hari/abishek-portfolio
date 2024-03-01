@@ -1,10 +1,13 @@
-import NexodusImg from "./assets/Nexodus-hero-bg.png";
-import NoteNestImg from "./assets/NoteNest-hero-bg.png";
-import FitzenImg from "./assets/Fitzen-hero-bg.png";
+import NexodusImg from "./assets/nexodus-HD.png";
+import NoteNestImg from "./assets/notenest-HD.png";
+import FitzenImg from "./assets/fitzen-HD.png";
 
-import { FaReact, FaCss3 } from "react-icons/fa";
-import { SiJavascript, SiStyledcomponents, SiAuth0 } from "react-icons/si";
-import { AiOutlineHtml5 } from "react-icons/ai";
+import Javascript from "./assets/js.png";
+import html from "./assets/html-5.png";
+import css from "./assets/css-3.png";
+import react from "./assets/react.png";
+import styledComponent from "./assets/styled-components.png";
+import auth from "./assets/auth.png";
 
 export const projects = [
   {
@@ -34,11 +37,7 @@ export const singleProject = [
     img: NexodusImg,
     githubLink: "https://github.com/abishek-hari/Nexodus",
     websiteLink: "https://nexodus.netlify.app/",
-    icons: [
-      <FaReact className='web__icons' />,
-      <SiStyledcomponents className='web__icons' />,
-      <SiAuth0 className='web__icons' />,
-    ],
+    icons: [react, styledComponent, auth],
     techstack: ["React", "Styled Component", "Auth0"],
     title: "Nexodus",
     description:
@@ -46,10 +45,10 @@ export const singleProject = [
     project__goal_title: "Project Purpose And Goal",
     project__goal_desc:
       "The primary goal of Nexodus was to design and build a responsive e-commerce website that provides a seamless shopping experience.I aimed to create an intuitive platform where users could explore a wide variety of furniture options. The project's purpose was to develop a real-world application that applies front-end technologies to solve user-centric challenges.",
-    project__webstack__title: "Web Stack and Explanation",
+    project__webstack__title: "Web Stack Explanation",
     project__webstack__desc:
       "For the tech side of things, I used some modern tools to make Nexodus work smoothly:\nReact: For dynamic UIs with component-based architecture.\nStyled Components: Responsive, visually appealing styling for all screen sizes.",
-    project__lesson_title: "Lessons Learned:",
+    project__lesson_title: "Lessons Learned",
     project__lesson_desc:
       "While working on Nexodus, I learned a lot about  development and design. It improved my skills in building user-friendly websites. I became proficient in React which is important for creating interactive web applications.Implementing Auth0 for secure authentication elevated my understanding of safeguarding user data. And by using Styled Components, I got better at making websites look visually appealing and consistent.",
   },
@@ -58,11 +57,7 @@ export const singleProject = [
     img: NoteNestImg,
     githubLink: "https://github.com/abishek-hari/NoteNest",
     websiteLink: "https://notenestv1.netlify.app/",
-    icons: [
-      <AiOutlineHtml5 className='web__icons' />,
-      <FaCss3 className='web__icons' />,
-      <SiJavascript className='web__icons' />,
-    ],
+    icons: [html, css, Javascript],
     techstack: ["HTML", "CSS", "JAVASCRIPT"],
     title: "NoteNest - Your Digital Notebook",
     description:
@@ -70,10 +65,10 @@ export const singleProject = [
     project__goal_title: "Project Purpose And Goal",
     project__goal_desc:
       "I built NoteNest to be a user-friendly digital companion for capturing ideas anytime, anywhere. Whether it's a quick reminder or detailed project notes, NoteNest is there to boost your productivity and keep you organized.",
-    project__webstack__title: "Web Stack and Explanation",
+    project__webstack__title: "Web Stack Explanation",
     project__webstack__desc:
       "Developed using HTML, CSS, and JavaScript, NoteNest keeps things simple and easy to use. It also uses local storage, ensuring your notes are secure and accessible even without an internet connection. NoteNest is a straightforward app, letting you Create, Read, Update, and Delete notes effortlessly.",
-    project__lesson_title: "Lessons Learned:",
+    project__lesson_title: "Lessons Learned",
     project__lesson_desc:
       "Building NoteNest taught me the importance of user-friendly design. Integrating local storage improved my understanding of data persistence, ensuring a seamless experience for users. Using plain JavaScript and CSS for this project laid a solid foundation in frontend development.",
   },
@@ -82,10 +77,7 @@ export const singleProject = [
     img: FitzenImg,
     githubLink: "https://github.com/abishek-hari/Fitzen",
     websiteLink: "https://fitzens.netlify.app/",
-    icons: [
-      <FaReact className='web__icons' />,
-      <FaCss3 className='web__icons' />,
-    ],
+    icons: [react, css],
     techstack: ["React", "CSS"],
     title: "Fitzen",
     description:
@@ -93,10 +85,10 @@ export const singleProject = [
     project__goal_title: "Project Purpose And Goal",
     project__goal_desc:
       "The primary aim of Fitzen is to make fitness accessible to everyone. I wanted to create a platform where people, regardless of their fitness level, could find detailed instructions for exercises, making it simple to get started or advance in their fitness journey. The goal is to empower users with the knowledge they need to maintain a healthy lifestyle.",
-    project__webstack__title: "Web Stack and Explanation",
+    project__webstack__title: "Web Stack Explanation",
     project__webstack__desc:
       "For the tech side of things, I employed the following technologies to ensure a user-friendly and informative experience:\nReact: For dynamic UIs with component-based architecture.\nCSS: I used modern CSS techniques for styling, ensuring a responsive and visually appealing design.",
-    project__lesson_title: "Lessons Learned:",
+    project__lesson_title: "Lessons Learned",
     project__lesson_desc:
       "During the development of Fitzen, I gained valuable insights into user experience and the importance of providing clear and concise information.I also learned to work with React effectively, improving my skills in creating informative and interactive web applications, which will be valuable for future projects.",
   },

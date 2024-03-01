@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../../assets/Abishek-profile-v2.png";
+import HeroImg from "../../assets/portfolio-abt-img-1.png";
 import "./About.css";
 
 const About = () => {

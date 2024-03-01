@@ -1,13 +1,14 @@
 import React from "react";
 import "./Skills.css";
-import { FaReact, FaCss3 } from "react-icons/fa";
-import {
-  SiRedux,
-  SiTailwindcss,
-  SiJavascript,
-  SiStyledcomponents,
-} from "react-icons/si";
-import { AiOutlineHtml5, AiFillGithub } from "react-icons/ai";
+
+import Javascript from "../../assets/js.png";
+import html from "../../assets/html-5.png";
+import css from "../../assets/css-3.png";
+import react from "../../assets/react.png";
+import styledComponent from "../../assets/styled-components.png";
+import git from "../../assets/github.png";
+import redux from "../../assets/redux-toolkit.png";
+import tailwind from "../../assets/tailwind-css.png";
 
 const Skills = () => {
   return (
@@ -23,37 +24,51 @@ const Skills = () => {
       <div className='skills__box'>
         <ul className='skill__info'>
           <div className='skills__name'>
-            <SiJavascript className='skill-icon' />
+            <div className='icon__wrapper'>
+              <img src={Javascript} alt='icon' className='skill-icon' />
+            </div>
             <li className='skills'>Javascript</li>
           </div>
           <div className='skills__name'>
-            <FaReact className='skill-icon' />
+            <div className='icon__wrapper'>
+              <img src={react} alt='icon' className='skill-icon' />
+            </div>
             <li className='skills'>react</li>
           </div>
           <div className='skills__name'>
-            <SiRedux className='skill-icon' />
+            <div className='icon__wrapper'>
+              <img src={redux} alt='icon' className='skill-icon' />
+            </div>
             <li className='skills'>Redux toolkit</li>
           </div>
-
           <div className='skills__name'>
-            <SiTailwindcss className='skill-icon' />
+            <div className='icon__wrapper'>
+              <img src={tailwind} alt='icon' className='skill-icon' />
+            </div>
             <li className='skills'>Tailwind css</li>
           </div>
           <div className='skills__name'>
-            <SiStyledcomponents className='skill-icon' />
+            <div className='icon__wrapper'>
+              <img src={styledComponent} alt='icon' className='skill-icon' />
+            </div>
             <li className='skills'>styled Componets</li>
           </div>
-
           <div className='skills__name'>
-            <AiOutlineHtml5 className='skill-icon' />
+            <div className='icon__wrapper'>
+              <img src={html} alt='icon' className='skill-icon' />
+            </div>
             <li className='skills'>Html</li>
           </div>
           <div className='skills__name'>
-            <FaCss3 className='skill-icon' />
+            <div className='icon__wrapper'>
+              <img src={css} alt='icon' className='skill-icon' />
+            </div>
             <li className='skills'>css</li>
           </div>
           <div className='skills__name'>
-            <AiFillGithub className='skill-icon' />
+            <div className='icon__wrapper'>
+              <img src={git} alt='icon' className='skill-icon' />
+            </div>
             <li className='skills'>Git</li>
           </div>
         </ul>

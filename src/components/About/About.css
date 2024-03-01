@@ -1,3 +1,7 @@
+.about__container {
+  background: linear-gradient(to right, #fffaee, #fff1f2);
+  padding-bottom: 1rem;
+}
 .about__img {
   display: none;
 }
@@ -46,14 +50,15 @@
   .about__img {
     display: flex;
     width: 20rem;
-    height: 16.5rem;
+    height: 20rem;
     object-fit: cover;
     border-radius: 1rem;
+    background-color: var(--clr-salamon);
   }
   .about__left {
     display: grid;
     justify-content: start;
-    padding: 1rem 0.3rem 0;
+    padding: 1rem 0.3rem 0 1.5rem;
   }
   .about__title {
     font-size: var(--size-5xl);
@@ -63,10 +68,14 @@
     font-size: var(--size-sm);
     color: var(--clr-medium);
     line-height: 1.6;
+    text-align: justify;
   }
   .about__box {
+    background-image: url("../../assets/hero-bg.png");
+    background-position: center;
+    background-size: cover;
     padding: 2rem 1rem;
-    background-color: var(--clr-span-bg);
+    box-shadow: var(--shadow-1);
     border: none;
   }
 }
@@ -75,11 +84,11 @@
 @media (min-width: 1024px) {
   .about__title {
     font-size: var(--size-7xl);
-    color: var(--clr-whitesmoke);
+    color: var(--clr-medium);
   }
   .about__desc {
     font-size: var(--size-base);
-    color: var(--clr-whitesmoke);
+    color: var(--clr-medium);
     line-height: 1.5;
   }
 }

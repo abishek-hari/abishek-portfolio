@@ -1,3 +1,6 @@
+.work__container {
+  background: linear-gradient(to right, #fffaee, #fff1f2);
+}
 .work__title {
   font-size: var(--size-2xl);
 }
@@ -60,7 +63,7 @@
   transition: transform 0.3s ease-in;
 }
 .work__btn:hover .fa__arrow {
-  transform: translateX(12px);
+  transform: translateX(10px);
 }
 
 /* sm */
